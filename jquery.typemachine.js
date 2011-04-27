@@ -31,7 +31,7 @@
         else {
           clearInterval(interval);
           // execute callback if given
-          options.afterCallback && options.afterCallback($(that), settings.text);
+          options.afterCallback && options.afterCallback.apply(that, [settings.text]);
         }
       }, settings.speed);
     });
