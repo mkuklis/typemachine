@@ -30,6 +30,8 @@
         }
         else {
           clearInterval(interval);
+          // execute callback if given
+          options.afterCallback && options.afterCallback($(that), settings.text);
         }
       }, settings.speed);
     });
