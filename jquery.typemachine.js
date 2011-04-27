@@ -10,7 +10,7 @@
     // default settings
     var settings = {
       text: "",
-      speed: 100
+      speed: 20
     };
       
     return this.each(function() {
