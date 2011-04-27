@@ -3,4 +3,5 @@
 
 
 The usage example:
+
     $('selector').typemachine({text: "hello from typemachine", speed: 10});
