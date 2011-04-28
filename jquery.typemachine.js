@@ -18,12 +18,13 @@
         $.extend(settings, options);
       }
 
-      var that = this,
-        i = 0,
-        l = settings.text.length;
+      var that = this
+        , i = 0
+        , l = settings.text.length;
         
       // reset current text
       $(this).text('');
+      
       var interval = setInterval(function() {
         if (i < l) {
           $(that).append(settings.text[i++]);
